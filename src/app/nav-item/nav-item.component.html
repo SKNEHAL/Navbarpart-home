@@ -1,0 +1,94 @@
+<mat-sidenav-container class="sidenav-container"   >
+  <mat-sidenav #drawer class="sidenav" fixedInViewport="false"
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar style="background-color:rgb(114, 250, 159);" id="dr">Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item routerLink="home">Home</a>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" id="homemobile">  home</mat-icon>
+      <a mat-list-item >Services</a>
+      
+      <button mat-button [matMenuTriggerFor]="menu"  id="carot5" style="position:relative;left:59px;top:-39px;">V</button>
+      <span class="material-icons" id="services">view_list</span>
+<mat-menu #menu="matMenu" >
+  <button mat-menu-item>Schemes</button>
+  <button mat-menu-item>Marketing</button>
+  <button mat-menu-item>Membership</button>
+  <button mat-menu-item>Management</button>
+</mat-menu>
+      <a  id="product" mat-list-item >Products</a>
+
+      <span class="material-icons" id="ActualProduct">grass</span>
+      <a id="product" mat-list-item >Team</a>
+      
+      <span class="material-icons" id="team"> groups
+ </span>
+    
+        <a mat-list-item  id="loginmobile" routerLink="Loginuser" >Login</a>
+        <span class="material-icons" id="loginmobileview" > login</span>
+
+        <a mat-list-item  id="loginmobile">Logout</a>
+        <span class="material-icons" id="logoutmobile">logout</span>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async" >
+        <mat-icon aria-label="Side nav toggle icon" >menu</mat-icon>
+      </button>
+ 
+      <span style="cursor:pointer;"  >Thoughts</span>
+
+      <span class="List" >
+        <mat-icon aria-hidden="false" aria-label="Example home icon" id="home" >  home</mat-icon><a routerLink="home" style="color: aliceblue;">Home</a> 
+        <a  >Services</a>
+        <span class="material-icons" id="ServicesHeader">view_list</span>
+
+      <button mat-button [matMenuTriggerFor]="menu"  id="carot" style="position:relative;left:-35px;color:deeppink;">V</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>Schemes</button>
+  <button mat-menu-item>Marketing</button>
+  <button mat-menu-item>Membership</button>
+  <button mat-menu-item>Management</button>
+</mat-menu>
+<span class="material-icons" id="productnav">grass</span>
+
+      <a id="ulProduct" >Products</a>
+
+
+      <a id="ulProduct" >Team</a>
+
+  
+      <span class="material-icons" id="teamNav"> groups   </span>
+
+
+    
+<a  id="login" routerLink="Loginuser" routerLinkActive="active" style="color: aliceblue;">Login</a>
+<span class="material-icons" id="loginIcon"  > login</span>
+<a  id="login" >Logout</a>
+
+<span class="material-icons" id="logoutIcon">logout</span>
+</span>
+    </mat-toolbar>
+
+
+
+<router-outlet></router-outlet>
+  
+
+
+
+
+    <!-- Add Content Here -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+
+

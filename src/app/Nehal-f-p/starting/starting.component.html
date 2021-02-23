@@ -1,0 +1,26 @@
+<p>starting works!</p>
+
+<table [border]="si">
+<tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Class</td>
+    <td>Gender</td>
+</tr>
+<tr *ngFor="let no of abc">
+<th>{{no.name }}</th>
+<td>{{no.age |separate:no.age}}</td>
+<td>{{no.class}}</td>
+<td>{{no.Gender}}</td>
+</tr>
+
+</table>
+
+
+<div>
+
+<h3>{{name}}</h3>
+<h3>{{roll}}</h3>
+<h3>{{age}}</h3>
+
+</div>

@@ -1,0 +1,216 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;
+
+
+
+
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.List{
+
+ margin-left:250px;
+
+}
+
+.List a{
+
+padding-left:26px;
+cursor: pointer;
+
+font-size:14px;
+
+}
+
+#home{
+
+position: relative;
+
+top:2px ;
+font-size:16px; 
+left:33px;
+}
+
+ a{
+
+transform:translateX(8px);
+
+
+}
+
+
+
+#carot:hover{
+
+    transform:rotate(180deg);
+    transition:1s;
+}
+
+#carot5{
+
+
+color: springgreen;
+
+    width:4px;
+}
+
+
+
+#carot5:hover{
+
+transition:1s;
+
+    transform:rotate(180deg);
+}
+#product{
+
+position: relative;
+
+top:-28px;
+
+
+}
+
+#homemobile{
+
+position: relative;
+
+top:-30px;
+left:7px;
+
+font-size:15px;
+
+}
+
+#services{
+
+    position: relative;
+
+    top:-39px;
+font-size:15px;
+    left:-56px;
+}
+
+#ActualProduct{
+
+position: relative;
+
+top:-60px;
+left:7px;
+
+font-size:15px;
+
+}
+
+#team{
+
+    position: relative;
+
+    top:-59px;
+    font-size:15px;
+
+    left:8px;
+}
+
+#ServicesHeader{
+
+  position: relative;
+  left:-73px; 
+  top:2px;
+  font-size:16px; 
+
+}
+
+#ulProduct{
+
+position: relative;
+left:-66px;
+
+}
+
+#productnav{
+    font-size:16px; 
+
+    position: relative;
+    left:-42px;
+
+}
+
+#teamNav{
+
+    font-size:16px; 
+
+    position: relative;
+    left:-119px;
+top:2px;
+
+}
+
+#login{
+position: relative;
+
+left:-73px;
+
+}
+
+#loginIcon{
+
+position: relative;
+
+
+left:-127px;
+top:3px;
+font-size:16px;
+
+}
+
+#logoutIcon{
+    position: relative;
+    left:-135px;
+    top:3px;
+    font-size:16px;
+
+}
+
+#loginmobile{
+
+position: relative;
+top:-45px;
+
+}
+
+#loginmobileview{
+
+
+position: relative;
+
+top:-75px;
+font-size:16px;
+left:6px;
+}
+#logoutmobile{
+
+
+    position: relative;
+    
+    top:-75px;
+    font-size:16px;
+    left:6px;
+    }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+
+    #dr{
+     
+        background: red;
+        animation: mymove 5s infinite;
+      }
+      
+      @keyframes mymove {
+        50% {background-color: blue;}
+      }
+

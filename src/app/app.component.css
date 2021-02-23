@@ -1,0 +1,82 @@
+/* a{
+
+font-size:18px;
+
+color:white
+}
+.menudemoCustomTrigger .md-menu-demo {
+    padding: 24px; }
+  
+  .menudemoCustomTrigger .menu-demo-container {
+    min-height: 200px; }
+
+#ps{
+
+
+color:white;
+
+width:56px;
+font-size:14px;
+
+
+cursor:pointer;
+position: relative;
+top:-388px;
+left:406px;
+opacity:0;
+padding-left:9px;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#li:hover{
+
+color:rgb(0, 255, 213);
+
+font-size:14px;
+
+}
+
+.sop{
+
+font-size:20px;
+top:-570px;
+position:relative;
+left:440px;
+cursor:pointer;
+color:black;
+
+}
+
+
+
+
+
+
+
+
+ */
+
+ 
+
+
+ #sd:hover{
+
+
+
+transition:1s;
+
+transform:rotate(180deg);
+
+ }

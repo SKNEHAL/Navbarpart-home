@@ -1,0 +1,56 @@
+<h1>login-part works!</h1>
+
+<div>
+
+    <ng-container *ngComponentOutlet="se"></ng-container>
+    
+</div>
+
+
+<ng-container *ngComponentOutlet="y"></ng-container>
+
+<form class="col-md-6" #g="ngForm">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" [(ngModel)]="userobj.email" name="email" ngModel id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" [(ngModel)]="userobj.password" name="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="adduser(g.value)" *ngIf="!edit">Submit </button> &nbsp; &nbsp;   
+  <button type="button" class="btn btn-warning" *ngIf="edit" (click)="updatecode()">Updated</button>
+</form><br><br>
+
+
+
+
+
+
+
+
+
+  <table class="table col-md-6">
+    <thead>
+      <tr>
+
+        <th scope="col">Email</th>
+        <th scope="col">password</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    
+      <tr *ngFor="let no of ge">
+        <td>{{no.email}}</td>
+        <td>{{no.password}}</td>
+        <td><button class="btn btn-primary fa fa-edit" (click)="edituser(no)"> &nbsp; Edit</button></td>
+        <td><button class="btn btn-warning fa fa-trash" (click)="deleteuser(no)"> &nbsp; Delete</button></td>
+
+     </tr>
+
+  </table>
+
+
